@@ -1,13 +1,248 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* font-family :"Poppins","sans-serif;" */
+/* font-family :"Playfair Display","sans-serif;" */
+
+/* navbar css */
+
+.navbar{
+  font-family: "Poppins",sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -px grey;
+  --webkit-box-shadow:0 8px 6px -6px grey;
+  border-bottom: solid grey !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand{
+  font-weight: 700;
+  font-family: "roboto",sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+/* page not found css */
+
+.pnf{
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title{
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading{
+  font-weight: normal;
+}
+
+.pnf-btn{
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+
+}
+/* footer */
+
+.footer{
+  color: white;
+  padding: 25px;
+  background: #000000;
+  background: -webkit-image-set(
+    to right,
+    #434343,
+    #000000
+  );
+  background: linear-gradient(to right , #434343,
+  #000000 );
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover{
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* contact is css */
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+  max-width: 400px;
+  color: #333;
+}
+
+.contact-details h2 {
+  color: #3498db;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  svg {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #3498db;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.telecaller-image {
+  max-width: 400px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* about us css */
+
+.about-us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.about-us-content {
+  max-width: 600px;
+  color: #333;
+}
+
+.about-us-content h2 {
+  color: #3498db;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-us-image {
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.about-us-image:hover {
+  transform: scale(1.05);
+}
+
+/* privacy and policy css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.privacy-policy-container {
+  max-width: 800px;
+  margin: 60px auto 60px; /* Adjust top and bottom margin based on your header and footer height */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scroll for content */
+  height: calc(100vh - 140px); /* Adjust height based on header and footer height */
+}
+
+.privacy-policy-image {
+  width: 100%;
+  margin-top: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.5;
+  color: #555;
+}
+
+.last-modified {
+  color: #777;
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+
+/* Register page css */
+
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
 }
