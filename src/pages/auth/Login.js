@@ -43,6 +43,8 @@ const Login = () => {
         setLoading(false);
     };
 
+    console.log("Hello")
+
     const onClickForgotPassword = async () => {
         navigate("/forgot-password")
     }
